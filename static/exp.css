@@ -1,0 +1,39 @@
+.experiencia{
+    background-color: blanchedalmond;
+    padding: 10px;
+    
+}
+.experiencia h1,h3,p{
+    color: black;
+}
+.experiencia h1{
+    color: darkgrey;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+@media(max-width:600px){
+    .experiencia h1{
+    font-size: 50px;
+    }
+}
+.experiencia h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.experiencia h3{
+    font-size: 25px;
+   font-weight: 300;}
+
+.experiencia p{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagem img{
+    display: block;
+    max-width: 100%;
+    border-radius: 15px
+    
+}

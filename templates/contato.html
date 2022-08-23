@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body %}
+</div>
+<form action="{{ url_for('contato') }}" method="POST">
+    {{ form.csrf_token }}
+<div class="container formulario principal ">
+    <div class="titulo">
+        {{form.nome.label}}
+        {{form.nome (class='form-control')}}
+        {% for error in form.nome.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div class="titulo">
+        {{form.email.label}}
+        {{form.email (class='form-control')}}
+    </div>
+    <div class="titulo">
+        {{form.mensagem.label}}
+        {{form.mensagem (class='form-control')}}
+    </div >
+
+
+    <div class="botao">{{ form.submit(class='btn btn-success') }}</div>
+
+   <section class="contatos">
+    <p>
+        WhatsApp (49) 9 91875343 <br>
+        gabriel ferrandin@hotmail.com
+    </p>
+
+    <div class="class=alert alert-success alerta" role="alert">
+        {%  for message in get_flashed_messages() %}
+        {{message }}
+        {% endfor %}
+
+   </section>
+
+</div>
+
+</form>
+
+
+
+{% endblock %}

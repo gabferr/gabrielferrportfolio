@@ -1,0 +1,16 @@
+.formulario{
+    padding: 10px;
+    width: auto;
+}
+.botao{
+    margin-top: 10px;
+}
+.titulo{
+    font-size: 25px;
+    color: black;
+}
+.contatos p{
+    font-size: 50px;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
