@@ -7,6 +7,9 @@
     background-color: rgb(255, 255, 255);
 }
 
+.header li {
+    color: #000;
+}
 
 .card {
     width: 400px;
