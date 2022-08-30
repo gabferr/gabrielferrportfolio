@@ -1,9 +1,10 @@
 .footer {
+    margin-top: 250px;
     padding: 15px;
     background-color: hsl(210, 11%, 15%);
-    text-align: center;  
-}
-.texto{
-    color: antiquewhite;
+    text-align: center;
 }
 
+.texto {
+    color: antiquewhite;
+}

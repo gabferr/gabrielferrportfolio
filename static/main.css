@@ -3,7 +3,7 @@
 @import url(./exp.css);
 @import url(./contatos.css);
 
-.principal{
+.principal {
     background-color: rgb(255, 255, 255);
 }
 
@@ -46,6 +46,3 @@
 .number3 {
     font-weight: 500
 }
-
-
-

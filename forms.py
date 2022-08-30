@@ -5,8 +5,7 @@ from wtforms.validators import DataRequired, Email
 csrf = CSRFProtect()
 
 class FormMensagem(FlaskForm):
-    nome = StringField('Nome', validators=[DataRequired()])
-    email = StringField('E-mail', validators=[DataRequired(), Email()])
-    mensagem = TextAreaField ('Digite sua mensagem', validators=[DataRequired()])
-    botao_submit_enviar = SubmitField('Enviar Mensagem')
-    submit = SubmitField("Enviar")
+    name = StringField('Nome', validators=[DataRequired('Nome não pode ficar vazio')])
+    email = StringField('E-mail', validators=[DataRequired('E-mail não pode ficar vazio'),Email('Informe um email válido')])
+    subject = StringField('Assunto', validators=[DataRequired('Assunto não pode ficar vazio')])
+    message = TextAreaField('Mensagem', validators=[DataRequired('Mensagem não pode ficar vazio')])
